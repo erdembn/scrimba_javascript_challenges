@@ -10,27 +10,30 @@ const messages = [
 
 
 function reverseString(arr) {
-    arr = arr.split(" ")
-    let newArray = []
-    for (let i = 0; i < arr.length; i++) {
-        let word = arr[i].split("").reverse().join("")
-        newArray.push(word)
-    }
+    return arr = arr.split("").reverse().join("")
+    // let newArray = []
+    // for (let i = 0; i < arr.length; i++) {
+    //     let word = arr[i].split("").reverse().join("")
+    //     newArray.push(word)
+    // }
 
-    return newArray.join(" ")
+    // return newArray.join(" ")
 }
 
 
-
-function reverseStringsInArray(arr) {
-    let newArray = []
-    for (let i = 0; i < arr.length; i++) {
-        let word = arr[i].split(" ").reverse().join(" ")
-        newArray.push(word)
-    }
-
-    return newArray.map(sentence => reverseString(sentence))
+function reverseStringsInArray(arr){
+   return  arr.map(arr => reverseString(arr))
 }
+
+// function reverseStringsInArray(arr) {
+//     let newArray = []
+//     for (let i = 0; i < arr.length; i++) {
+//         let word = arr[i].split(" ").reverse().join(" ")
+//         newArray.push(word)
+//     }
+
+//     return newArray.map(sentence => reverseString(sentence))
+// }
 
 console.log(reverseString(title));
 console.log(reverseStringsInArray(messages));
