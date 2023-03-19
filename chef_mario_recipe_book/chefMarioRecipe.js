@@ -19,4 +19,17 @@ function removeDupesFromArray(arr) {
 
 }
 
+//another way to do it
+
+// function removeDupesFromArray(arr) {
+
+//     const uniqueItems = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!uniqueItems.includes(arr[i])) {
+//             uniqueItems.push(arr[i]);
+//         }
+//     }
+//     return uniqueItems;
+// }
+
 console.log(removeDupesFromArray(eggScrambleRecipe)); 
